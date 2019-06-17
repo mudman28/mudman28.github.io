@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-image: url('backgroundCan.jpg');
+    /* justify-content: center;
+    align-items: center; */ 
+    overflow: hidden; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.header1{
+    margin-top: 30px;
+    margin-left: 15px;
+    color: #fff45b;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+ul{
+    
+    margin: 15px;
+    padding: 0;
+    box-shadow: 0 15px 40px rgba(0,0,0,1);
+}
+
+ul li{
+    position: relative;
+    list-style: none; 
+    font-size: 2em;
+    padding: 15px;
+    font-family: monospace;
+    cursor: pointer;
+    box-sizing: border-box;
+ 
+}
+ul li:hover{
+    color: rgb(253, 191, 120);
+    text-shadow: 1px 1px .5px rgb(66, 7, 7)
+}
+ul li:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffe3fb;
+    z-index: -1;
+    transform: scaleY(0);
+    transition: transform 0.6s;
+    transform-origin: bottom;
+}
+
+ul li:hover:before{
+    transform: scaleY(1);
+    transition: transform 0.5s;
+    transform-origin: top;
+}
+ul li:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fdf1ae;
+    z-index: -1;
+    transform: scaleY(0);
+    transition: transform 0.5s;
+    transform-origin: bottom;
+    filter: blur(40px);
+}
+
+ul li:hover:after{
+    transform: scaleY(1);
+    transition: transform 0.5s;
+    transform-origin: top;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    float: right;
+    padding:2px;
+    border:1px solid rgba(48, 10, 3, 0.8);
+    background-color:rgb(73, 23, 7);
+}
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-gap: 450px;
+    padding: 10px;
+  }
+
+  .box2{
+      color: #fcf7b5;
+      margin-top: 80px;
+      margin-left: 200px;
+  }
+
+  .info{
+      margin-top: 330px;
+      text-align: center;
+      border-radius: 20%;
+      font-size: 17px;
+      padding-top: 5px;
+      background: linear-gradient(to bottom, rgba(48, 10, 3, 0.8), rgba(0,0,0,.5)), rgb(0, 0, 0);
+      font-family: Arial, Helvetica, sans-serif
+  }
+
+  .info p{
+      font-size: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(255, 199, 45);
+  }
+
+  a:hover{
+    color: rgb(248, 168, 77);
+    text-shadow: 1px 1px .5px rgb(66, 7, 7)
+  }
+
+  
